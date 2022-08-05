@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif
+}
+/* scrollbar for content box */
+.contentbox1198::-webkit-scrollbar-thumb {
+    background: #868484;
+    border-radius: 20px;
+}
+.contentbox1198::-webkit-scrollbar {
+    background: #fff;
+    width: 5px;
+}
+/* show button in center of the page */
+.centerbtn1198{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: calc(50% - 2px); =======> display:inline-flex */
+    /* width: 49.77%; */
+}
+/* display for button */
+.showbtn1198{
+    background-color: #00a8ff;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: 4px solid #000000;
+    border-radius: 50%;
+    transition: all .4s ease;
+}
+.showbtn1198:hover{
+    outline: 7px solid #000000;
+}
+/* pop-up design */
+.popup-box1198{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 720px;
+    height: 440px;
+    overflow: hidden;
+    border: 1px solid #dddd;
+    border-radius: 18px;
+    box-sizing: border-box; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0 , 0.24);
+    margin: 5% auto;
+    line-height: 1.5;
+    transition: all .4s ease;
+    transform: scale(0);
+}
+/* image box */
+.showimg1198{
+    width: 50%;
+}
+.showimg1198 img{
+    width: 100% ;
+    height: 440px ;
+    object-fit: cover;
+    vertical-align: middle;
+}
+/* content box */
+.contentbox1198{
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #212529;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.text_muted1198{
+    color: #6c757d;
+}
+/* top of content box */
+.info1198{
+    margin-top: 3rem;
+}
+.titleinfo1198{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.info1198 p{
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+/* social content box */
+.social_content1198 p{
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.sociallogin1198{
+    display: flex;
+    align-items: center;
+    color: #615f5fdd;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.sociallogin1198 a{
+    width: 100px;
+    height: 100px;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: unset;
+}
+.sociallogin1198 a:hover{
+    border: 2px solid #ee82ee;
+    color: unset;
+}
+.sociallogin1198 .fab .far{
+    margin-bottom: 00.5rem;
+}
+.social_bott1198{
+    margin-top: 1rem;
+}
+.social_bott1198 p{
+    margin-bottom: 0;
+}
+.social_bott1198 a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ee82ee;
+}
+.social_bott1198 a:hover{
+    color:#ee82ee;
+}
+.fas.fa-chevron-right{
+    font-size: 12px;    
+}
+/* footer description */
+.footer_desc1198{
+    margin-top: auto;
+}
+.footer_desc1198 .text_muted1198{
+    font-size: 10px;
+    margin : 0 auto;
+}
+.terms_popup1198{
+    text-decoration: none;
+    color :#ee82ee;
+}
+.terms_popup1198:hover{
+    color :#ee82ee;
+}
+.policy_popup1198{
+    text-decoration: none;
+    color :#ee82ee;
+}
+.policy_popup1198:hover{
+    color :#ee82ee;
+}
+/* close button */
+.closebtn1198{
+    width: 20px;
+    height: 20px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #f3cff379;
+}
+.closebtn1198:hover {
+    color: #ff0000;
+}
+@media only screen and (max-width:768px){
+    .popup-box1198{
+        flex-wrap: wrap!important;
+        height: fit-content!important;
+        width: 70%!important;
+        border-radius: 18px!important;
+    }
+    .showimg1198 , .contentbox1198 {
+        width: 100%;
+        height: 300px;
+    }
+    .contentbox1198{
+        overflow-x: hidden;
+    }
+    
+}
